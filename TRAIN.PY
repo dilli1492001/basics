@@ -1,11 +1,20 @@
-def divide(a,b):
-    if b == 0:
-        return "cannot divided"
-    else :
-       return a/b
-a=divide(4,9)
-b=divide(4,0)
-print(a)
-print(b)
+class Dog:
+    def __init__(self,name,breed):
+        self.__name = name
+        self.breed = breed
+    def dog(self):
+        print(self.__name)
+    def breed(self):
+        print(self.breed)
+
+dog = Dog("lkjhghj","german")        
+dog.dog()
+dog.breed()
+
+
+    
+    
+    
+    
 
     
