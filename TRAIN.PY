@@ -1,15 +1,19 @@
-class Dog:
-    def __init__(self,name,breed):
-        self.__name = name
-        self.breed = breed
-    def dog(self):
-        print(self.__name)
-    def breed(self):
-        print(self.breed)
+import requests
 
-dog = Dog("lkjhghj","german")        
-dog.dog()
-dog.breed()
+ 
+print("***RHYMING WORD GENERATOR*****")
+choice = input('Enter a word:')
+endpoint = f"https://api.datamuse.com/words?sp={choice}"
+ 
+response = requests.get(endpoint)
+ 
+data = response.json()
+ 
+if response.status_code == 200:
+    for item in data:
+        print(item.get('word'))
+    
+
 
 
     
