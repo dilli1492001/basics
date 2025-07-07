@@ -158,38 +158,38 @@ cart or viewing product details.'''
 for Book) and actions (like issue, return, read). Write classes, create instances, and call some
 methods'''
 
-class book:
-    def __init__(self,title,author):
-        self.title = title
-        self.author = author
-    def issue(self):
-        print(f" {self.title} book  has been broken ...")
-    def ret(self):
-        print(f"{self.title} book   {self.author} has been return ...")
-    def read(self):
-        print(f"reading the {self.title} book been completed.... ")
-class librarian:
-    def __init__(self,title):
-        self.title = title
-        self.stock = False
-    def title(self):
-        if not self.stock:
-            print(f"{self.title} in stock ..")
-    def stock(self):
-        self.stock = True
-        print("out of stock ....")
-class member:
-    def __init__(self,id):
-        self.id=id
-    def id(self):
-        print(f"{self.id} is successfull....")
-b = book("ramyanam","valmiki")
-print(b.issue())
-print(b.ret())
-print(b.read())
-l = librarian("ramayanam")
-print(l.title)
-print(l.stock)
+# class book:
+#     def __init__(self,title,author):
+#         self.title = title
+#         self.author = author
+#     def issue(self):
+#         print(f" {self.title} book  has been broken ...")
+#     def ret(self):
+#         print(f"{self.title} book   {self.author} has been return ...")
+#     def read(self):
+#         print(f"reading the {self.title} book been completed.... ")
+# class librarian:
+#     def __init__(self,title):
+#         self.title = title
+#         self.stock = False
+#     def title(self):
+#         if not self.stock:
+#             print(f"{self.title} in stock ..")
+#     def stock(self):
+#         self.stock = True
+#         print("out of stock ....")
+# class member:
+#     def __init__(self,id):
+#         self.id=id
+#     def id(self):
+#         print(f"{self.id} is successfull....")
+# b = book("ramyanam","valmiki")
+# print(b.issue())
+# print(b.ret())
+# print(b.read())
+# l = librarian("ramayanam")
+# print(l.title)
+# print(l.stock)
 
 
 
