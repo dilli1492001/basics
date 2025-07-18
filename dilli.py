@@ -47,7 +47,7 @@ import streamlit as st
 
 # st.progress(100)
 
-# st.toggle("turn on")
-if st.button("singup"):
-    st.toast("signup successfull")
+# # st.toggle("turn on")
+# if st.button("singup"):
+#     st.toast("signup successfull")
 
