@@ -101,7 +101,7 @@
 #Expected Output: 2
 word = "This is a beautiful sunny day"
 a = list(word)
-print(a)
+print(a,strip())
 
 
 
